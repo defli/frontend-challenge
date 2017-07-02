@@ -183,7 +183,7 @@ gulp.task('copy:extras', function () {
 });
 
 gulp.task('build', ['clean:dist', 'clean:tmp'], function () {
-  runSequence(['sprite', 'images', 'copy:extras', 'client:build']);
+  runSequence('sprite', ['images', 'copy:extras', 'client:build']);
 });
 
 gulp.task('default', ['build']);
