@@ -59,7 +59,6 @@
     }
 
     // is it not empty?
-    console.log(field.value.length);
     if (field.value.length > 0) {
       __.removeClass(field, 'tip-form__input-invalid');
       __.addClass(field, 'tip-form__input-valid');
