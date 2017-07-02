@@ -1,0 +1,15 @@
+.seal {
+  background: url('../images/seal.png') no-repeat;
+  height: 138px;
+  width: 137px;
+  position: absolute;
+  right: 0;
+  top: -20px;
+
+  @media screen and (max-width: $maxWidth) {
+    top: -90px;
+    height: 90px;
+    width: 90px;
+    background-size: cover;
+  }
+}

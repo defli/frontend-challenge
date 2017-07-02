@@ -1,0 +1,11 @@
+body {
+  background: $bgColor url(../images/bg.png) no-repeat center top;
+
+  @media screen and (max-width: $maxWidth) {
+    background-size: contain;
+  }
+}
+
+.js-hidden {
+  display: none!important;
+}

@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Front-end Challenge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- build:css({.tmp,src,.}) styles/main.css -->
+      <!-- bower:css -->
+      <link rel="stylesheet" href="/bower_components/normalize-css/normalize.css" />
+      <link rel="stylesheet" href="/bower_components/pikaday/css/pikaday.css" />
+      <!-- endbower -->
+    <link rel="stylesheet" href="styles/sprite.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo"></div>
+      <div class="icons icons_hidden-mobile">
+        <a class="icons__link" href="https://facebook.com">
+          <i class="icon icon-facebook"></i>
+        </a><!-- /.icons__link -->
+        <a class="icons__link" href="https://twitter.com">
+          <i class="icon icon-twitter"></i>
+        </a><!-- icons__link -->
+        <a class="icons__link" href="https://instagram.com">
+          <i class="icon icon-instagram"></i>
+        </a>
+      </div><!-- /.icons -->
+    </header><!-- /.container -->
+    <main class="container container_relative">
+      <div class="seal"></div>
+      <h1 class="heading">
+        Our new online store is coming soon...
+      </h1><!-- .heading -->
+      <h2 class="heading heading_2">
+        And we're celebrating!
+      </h2><!-- .heading .heading_2 -->
+      <h1 class="heading heading_win heading_white">Win a mama's & papas gift</h1>
+      <h2 class="heading heading_2 heading_white">And have it delivered</h2>
+      <p class="paragraph">We’re on a journey to make parenting easier and baby’s days happier. Share with us your top tip to make parenting that little bit easier, for the chance to be one of 50 lucky customers to win a gift from Mamas & Papas.*</p>
+      <a href="#" class="button button_main js-competition-btn">Enter our competition now</a>
+    </main><!-- /.container -->
+
+    <section class="container">
+      <div class="step-container">
+        <div class="step">
+          <div class="step__rect step__rect_blue">
+          </div><!-- /.step__rect -->
+          <div class="step__text">Step</div>
+          <div class="step__number">1</div>
+          <h3 class="step__heading">Share your top tip</h3>
+        </div><!-- /.step -->
+        <div class="step">
+          <div class="step__rect step__rect_green"></div>
+          <div class="step__text">Step</div>
+          <div class="step__number">2</div>
+          <h3 class="step__heading">Select your preferred gift</h3>
+        </div><!-- /.step -->
+        <div class="step">
+          <div class="step__rect step__rect_yellow"></div>
+          <div class="step__text">Step</div>
+          <div class="step__number">3</div>
+          <div class="step__heading step__heading_large">We'll contact the lucky winners</div>
+        </div><!-- /.step -->
+      </div><!-- /.step-container -->
+    </section><!-- /.container -->
+
+    <section class="container">
+      <form action="#" class="tip-form js-tipform" novalidate>
+        <div class="tip-form__container">
+          <h1 class="tip-form__heading">Share your top tip</h1>
+          <h6 class="tip-form__info">to make parenting a little easier...</h6>
+          <div class="tip-form__grid-left">
+            <label class="tip-form__label" for="email">E-mail Address*</label>
+            <input type="email" name="email" id="email" class="tip-form__input" required>
+          </div><!-- /.tip-form__grid-left -->
+          <div class="tip-form__grid-right">
+            <label class="tip-form__label" for="phone">Mobile*</label>
+            <input type="tel" name="mobile" id="phone" class="tip-form__input js-phone">
+          </div><!-- /.tip-form__grid-right -->
+          <div class="tip-form__grid-full">
+            <span class="tip-form__iam">I am a</span>
+            <span class="tip-form__radio-container">
+              <label class="radio">
+                <input type="radio" name="isParent" value="parent" class="radio__input js-radio-parent" checked>
+                <span class="radio__text">Parent</span>
+                <span class="radio__indicator">
+                  <span class="radio__dot"></span>
+                </span><!-- /.radio__indicator -->
+              </label><!-- /.radio -->
+            </span>
+            <span class="tip-form__radio-container">
+              <label class="radio">
+                <input type="radio" name="isParent" value="parentTobe" class="radio__input js-radio-parent-tobe">
+                <span class="radio__text">Parent to be</span>
+                <span class="radio__indicator">
+                  <span class="radio__dot"></span>
+                </span><!-- /.radio__indicator -->
+              </label><!-- /.radio -->
+            </span>
+            <span class="tip-form__radio-container">
+              <label class="radio">
+                <input type="radio" name="isParent" value="other" class="radio__input js-radio-other">
+                <span class="radio__text">other</span>
+                <span class="radio__indicator">
+                  <span class="radio__dot"></span>
+                </span><!-- /.radio__indicator -->
+              </label><!-- /.radio -->
+            </span>
+          </div><!-- /.tip-form__grid-full -->
+          <div class="tip-form__grid-full">
+            <div class="children js-children">
+              <div class="children__triangle js-triangle"></div>
+              <div class="children__items js-items">
+                <div class="children__grid">
+                  <label class="children__label">Name
+                    <input type="text" name="child_name[]" class="children__input">
+                  </label><!-- /.children__label -->
+                </div><!-- /.children__grid -->
+                <div class="children__grid js-birth">
+                  <label class="children__label">Birth date
+                  <input type="text" name="birth_date[]" class="children__input js-datepicker">
+                  <i class="children__icon children__icon_calendar icon-calendar"></i>
+                  </label>
+                </div><!-- /.children__grid -->
+                <div class="children__grid">
+                  <label class="children__label">Gender
+                  <label class="children__select">
+                    <select name="gender[]" class="children__select-input">
+                      <option>Select</option>
+                      <option>Boy</option>
+                      <option>Girl</option>
+                    </select><!-- /.children__select-input -->
+                    <span class="children__select-indicator">
+                      <i class="children__icon icon icon-arrow-down" aria-hidden="true"></i>
+                    </span>
+                    </label>
+                  </label><!-- /.children__select -->
+                </div><!-- /.children__grid -->
+                <div class="children__grid children__grid_small js-btn-grid">
+                  <a href="#" class="button button_full button_green children__button js-clone-btn">Add Child</a>
+                </div><!-- /.children__grid -->
+              </div><!-- /.children__items -->
+            </div><!-- /.children -->
+          </div><!-- /.tip-form__grid-full -->
+          <div class="tip-form__grid-full">
+            <label class="tip-form__label">Share with us your top tip</label>
+            <textarea class="tip-form__input tip-form__input_textarea" name="tip" placeholder="Tell us in 200 words ..." required max="200"></textarea>
+          </div><!-- /.tip-form__grid-full -->
+          <div class="tip-form__grid-button">
+            <button type="submit" class="button button_full">proceed to next step</button>
+          </div>
+        </div><!-- /.tip-form__container -->
+      </form><!-- /.tip-form -->
+    </section><!-- /.container -->
+
+    <footer class="footer">
+      <div class="container container_relative">
+        <div class="icons icons_footer">
+          <a class="icons__link" href="https://facebook.com">
+            <i class="icon icon-facebook"></i>
+          </a><!-- /.icons__link -->
+          <a class="icons__link" href="https://twitter.com">
+            <i class="icon icon-twitter"></i>
+          </a><!-- icons__link -->
+          <a class="icons__link" href="https://instagram.com">
+            <i class="icon icon-instagram"></i>
+          </a>
+        </div><!-- /.icons -->
+
+        <span class="footer__text">Contact Customer Care +971 800 888 22  |   *Terms & Conditions</span>
+        <div class="footer__car"></div>
+      </div><!-- /.container -->
+      <div class="footer__path"></div>
+    </footer><!-- /.footer -->
+    <!-- build:js({src,.}) scripts/scripts.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/pikaday/pikaday.js"></script>
+    <!-- endbower -->
+
+    <script src="/bower_components/inputmask/dist/inputmask/dependencyLibs/inputmask.dependencyLib.js"></script>
+    <script src="/bower_components/inputmask/dist/inputmask/inputmask.js"></script>
+    <script src="scripts/scroll-to.js"></script>
+
+    <script src="scripts/helper.js"></script>
+    <script src="scripts/validation.js"></script>
+    <script src="scripts/app.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

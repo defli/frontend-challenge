@@ -1,0 +1,33 @@
+.icons {
+  float: right;
+  margin-top: -50px;
+
+  &_footer {
+    margin-top: 48px;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__link {
+    text-decoration: none;
+    margin-right: 3px;
+    margin-left: 3px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .icon {
+    display: inline-block;
+  }
+
+  &_hidden-mobile {
+    @media screen and (max-width: 960px) {
+      display: none;
+    }
+  }
+}

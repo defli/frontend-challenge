@@ -1,0 +1,98 @@
+.step-container {
+  margin-top: 40px;
+
+  @media screen and (max-width: 960px) {
+    margin-top: 20px;
+  }
+}
+
+.step {
+  font-family: $coreFont;
+  position: relative;
+
+  background: #fff url(../images/rect-bg.png) repeat;
+  width: 300px;
+  float: left;
+  margin-left: 17.5px;
+  margin-right: 17.5px;
+  margin-top: 20px;
+
+  min-height: 290px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &__number, &__text {
+    color: #fff;
+    position: absolute;
+  }
+
+  &__text {
+    text-transform: uppercase;
+    left: 50%;
+    margin-left: -20px;
+    top: 80px;
+    font-size: 16px;
+  }
+
+  &__number{
+    left: 50%;
+    top: 94px;
+    margin-left: -10px;
+    font-size: 36px;
+  }
+
+  &__rect {
+    height: 90px;
+    width: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    transform: rotate(-45deg);
+
+    &_blue {
+      background-color: $darkBlue;
+    }
+
+    &_yellow {
+      background-color: $darkYellow;
+    }
+
+    &_green {
+      background-color: $darkGreen;
+    }
+  }
+
+  &__heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    max-width: 150px;
+    text-transform: uppercase;
+    text-align: center;
+
+    &_large {
+      max-width: 200px;
+    }
+  }
+
+  @media screen and (max-width: $maxWidth) {
+    width: calc(100% - 30px);
+    &:first-child {
+      margin-left: 15px;
+    }
+
+    &:last-child {
+      margin-right: 15px;
+    }
+  }
+
+}

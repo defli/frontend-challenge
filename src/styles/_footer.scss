@@ -1,0 +1,42 @@
+.footer {
+  position: relative;
+  font-family: $coreFont;
+
+  &__text {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 30px;
+  }
+
+  &__car {
+    background: url('../images/car.png') no-repeat;
+    width: 272px;
+    height: 181px;
+    position: absolute;
+    top: 5px;
+    left: -312px;
+  }
+
+  &__path {
+    background: url('../images/path.png') repeat-x;
+    width: 100%;
+    height: 73px;
+    margin-top: 45px;
+  }
+
+  @media screen and (max-width: $maxWidth) {
+    &__car {
+      left: 0;
+      top: 160px;
+      width: 145px;
+      height: 98px;
+      background-size: cover;
+    }
+
+    &__path {
+      margin-top: 120px;
+    }
+  }
+}

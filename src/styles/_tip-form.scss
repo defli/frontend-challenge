@@ -1,0 +1,127 @@
+.tip-form {
+  font-family: $coreFont;
+  background-color: #fff;
+  margin-top: 30px;
+
+  &__container {
+    margin-left: 70px;
+    margin-right: 70px;
+
+    @media screen and (max-width: $maxWidth) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+
+  &__iam {
+    @media screen and (max-width: $maxWidth) {
+      display: block;
+      padding-bottom: 20px;
+    }
+  }
+  &__heading {
+    text-align: center;
+    text-transform: uppercase;
+    color: $darkGrey;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 50px;
+  }
+
+  &__info {
+    text-align: center;
+    font-size: 16px;
+    color: #3f3f3f;
+    padding-top: 20px;
+    margin: 0;
+  }
+
+
+  &__grid-left, &__grid-right {
+    width: calc(50% - 17.5px);
+    display: inline-block;
+    padding-top: 30px;
+    box-sizing: border-box;
+
+    @media screen and (max-width: $maxWidth) {
+      width: 100%;
+      padding: 0;
+      padding-top: 20px;
+    }
+  }
+
+  &__grid-left {
+    margin-right: 15px;
+    @media screen and (max-width: $maxWidth) {
+      margin-right: 0;
+    }
+  }
+
+  &__grid-right {
+    margin-left: 15px;
+
+    @media screen and (max-width: $maxWidth) {
+      margin-left: 0;
+    }
+  }
+
+  &__grid-full {
+    margin-top: 30px;
+    width: 100%;
+    display: inline-block;
+  }
+
+  &__grid-button {
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+
+  &__radio-container {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: Arial, serif;
+
+    @media screen and (max-width: $maxWidth) {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+
+  &__radio {
+    margin-right: 8px;
+  }
+
+  &__label {
+    font-family: Arial, Verdana, serif;
+    font-size: 16px;
+    color: #3a3a3b;
+    width: 100%;
+    display: block;
+  }
+
+  &__input {
+    border: 2px solid $lightGrey;
+    width: calc(100% - 30px);
+    padding: 13px;
+    margin-top: 15px;
+
+    &_textarea {
+      height: 70px;
+    }
+
+    &:focus {
+      outline: inherit;
+    }
+  }
+
+  &__input-invalid {
+    border-color: $red;
+  }
+
+  &__input-valid {
+    border-color: $green;
+  }
+}

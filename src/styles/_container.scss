@@ -1,0 +1,19 @@
+.container {
+  width: 970px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &_relative {
+    position: relative;
+  }
+
+  &:after {
+    display: table;
+    content: " ";
+    clear: both;
+  }
+
+  @media screen and (max-width: $maxWidth) {
+    width: 100%;
+  }
+}

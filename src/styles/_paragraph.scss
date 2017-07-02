@@ -1,0 +1,16 @@
+.paragraph {
+  font-family: 'Helvetica Neue', Helvetica, arial, serif;
+  max-width: 675px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 2em;
+  font-size: 18px;
+  color: #2d3c4e;
+
+  @media screen and (max-width: $maxWidth) {
+    font-size: 13px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
